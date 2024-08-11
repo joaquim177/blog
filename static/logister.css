@@ -1,0 +1,50 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 20%;
+}
+
+form label{
+    font-size: 1em;
+    font-weight: bold;
+}
+form input{
+    padding: 5px;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+p{
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+}
+.erro{
+    background-color: red;
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 4px; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:6px 4px;
+    margin-bottom: 10px;
+}
+.erro button{
+    font-size: 1.5em;
+    background:none;
+    color: rgb(213, 206, 206);
+    border: none;
+    cursor: pointer;
+}.erro button:hover{
+    color: white;
+}

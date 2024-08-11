@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='logister.css')}}">
+
+    <title>parkchat - python</title>
+</head>
+<body>
+    <header>
+        <h1>Parkchat 0.1 beta PYTHON</h1>
+    </header>
+    <main>  
+        <h2> Faça Login</h2>
+      
+        {%if login_invalid%}
+            <div class="erro" id='error'>
+                <span>{{login_invalid}}</span>
+                <button onclick='removeElement()'>x</button>
+            </div>
+        {%endif%}
+        
+        
+        <form action="/login" method='POST'>
+            <label for="name">Name</label>
+            <input type="text" name='name' placeholder='...' required>
+            <label for="password">Password</label>
+            <input type="password" name='password' placeholder='...' required>
+
+            <input type="submit" value='Login'>
+        </form>
+        <p>Nao tem conta? faça <a href="{{url_for('register')}}">Cadastro</a></p>
+    </main>
+
+    <script>
+        function removeElement(){
+            var element = document.getElementById("error")
+
+            if(element){
+                element.remove()
+            }
+        }
+    </script>
+</body>
+</html>

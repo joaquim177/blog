@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: space-between;
+    padding: 1em;
+    background: gray;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+header div{
+    display: flex;
+    width: 12%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header div p{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+header button{
+    cursor: pointer ;
+    font-size: 1.1em;
+    padding: 0px 20px;
+}
+
+.info{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:1em;
+    margin-bottom:1em;
+}.info a{
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    padding: 4px 20px;
+    border: 2px solid black;
+}.info a:hover{
+    background: gray;
+
+}
+form{
+    display: flex;
+    flex-direction:column ;
+    width: 80%;
+    margin-left: 10%;
+    
+}
+form input{
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 5px;
+}

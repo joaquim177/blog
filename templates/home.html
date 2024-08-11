@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='home.css')}}">
+
+    <title>My blog</title>
+</head>
+<body>
+    <header>
+        <h1>Parkchat 0.1 beta PYTHON</h1>
+
+        <div class="right">
+            <p>  {{user}} </p>
+            <button><a href="{{url_for('quit')}}">Sair</a></button>
+        </div>
+    </header>
+
+    <main>
+        <form method='POST' action='/' class="search">
+            <button><a href="{{url_for('create_post')}}">Create POST   </a> </button>
+            <input type="text" name='search' placeholder='Search...'>
+            <input type='submit' class='btn' value='Search'>
+        </form>
+        
+            <div class="posts">
+            {%for post in posts %}
+                <div class="post">
+                    <h3>{{post[2]}}</h3>
+                    <p>{{post[3]}}
+                    </p>
+                    <div class="bottom">
+                        <a href="{{ url_for('post', id=post[0]) }}" class='vm'>Ver mais</a>
+                        {%if user == post[1]%}
+                            <a href="{{ url_for('delete_post', id=post[0]) }}"><button>DELETE </button></a>
+                        {%endif%}
+                        <span>Creator: {{post[1]}}</span>
+                    </div>
+                </div>
+             {%endfor%} 
+            </div>
+       
+    
+    </main>
+</body>
+</html>

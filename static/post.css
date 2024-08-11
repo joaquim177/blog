@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: space-between;
+    padding: 1em;
+    position: fixed;
+    top: 0px;
+    background: gray;
+
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+header div{
+    display: flex;
+    width: 12%;
+    justify-content: space-between;
+    align-items: center;
+}
+header div p{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+header button{
+    cursor: pointer ;
+    font-size: 1.1em;
+    padding: 0px 20px;
+}
+
+.top{
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    align-items: center;
+
+}
+.creator{
+    width: 80%;
+    margin-left: 10%;
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.content{
+    width: 80%;
+    font-size: 1.4em;
+    margin-left: 10%;
+}
+
+
+
+
+
+
+
+
+.coments{
+    width: 80%;
+    margin-left: 10%;
+
+    margin-top: 4em;
+}
+
+.coments h2{
+    text-align: center ;
+    margin: 1em;
+}
+
+.coment-description{
+    width: 80%;
+    font-size: 1.5em;
+    padding: 4px 2px;
+}
+.coment-submit{
+    width: 18%;
+    font-size: 1.5em;
+    padding: 4px 2px;
+}
+
+
+.coment{
+    margin-top: 0.5em;
+    background-color: gray;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+.top-coment{
+    display: flex;
+    justify-content: space-between;
+}
+.coment p{
+    margin-bottom: 5px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='post.css')}}">
+    <title>Post</title>
+</head>
+<body>
+    <header>
+        <h1>Parkchat 0.1 beta PYTHON</h1>
+
+        <div class="right">
+            <p>  {{user}} </p>
+            <button><a href="{{url_for('quit')}}">Sair</a></button>
+        </div>
+    </header>
+
+    <div class="top">
+        <h1> {{post[2]}} </h1>
+        <a href="{{url_for('home')}}"> <button>Back</button></a>
+    </div>
+    <p class='creator'>Post creator: {{post[1]}}</p>
+    
+    <p class='content'>{{post[3]}}</p>
+
+
+    <div class="coments">
+        <h2>Comentarios</h2>
+
+        <form action="/add_coment">
+            <input type="text" name='description' class='coment-description' placeholder='Coment..'>
+            <input type="submit" class='coment-submit' value='Coment'>
+        </form>
+
+        <div class="coment">
+          <div class="top-coment">
+            <p class="name">Joaquim</p>
+            <span>Date: há 3 horas</span>
+          </div>
+          <p class="description">Berserk é muito ruim.</p>
+        </div>
+        <div class="coment">
+          <div class="top-coment">
+            <p class="name">Joaquim</p>
+            <span>Date: há 3 horas</span>
+          </div>
+          <p class="description">Berserk é muito ruim.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

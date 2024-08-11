@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+
+    height: 100vh;
+}
+header{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: space-between;
+    padding: 1em;
+    position: fixed;
+    top: 0px;
+    background: gray;
+
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+header div{
+    display: flex;
+    width: 12%;
+    justify-content: space-between;
+    align-items: center;
+}
+header div p{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+header button{
+    cursor: pointer ;
+    font-size: 1.1em;
+    padding: 0px 20px;
+}
+
+
+.search{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    position: fixed;
+    justify-content: right;
+    margin-top: 20px;
+    background: gray;
+    top: 3.4em;
+    padding-bottom: 0.4em;
+    align-items: center;
+}
+.search input, .search .btn{
+    font-size: 1.5em;
+     padding: 1px 20px;
+}
+.search button{
+    margin-right: 10px;
+    font-size: 1.5em;
+    padding: 1px 20px;
+    
+}.search button a{
+    text-decoration: none;
+    color: black;
+}
+.search .btn{
+    width: 10%;
+}
+.search input{
+    width: 30%;
+    margin-right: 10px;
+}
+.search .btn{
+    margin-right: 6%;
+}
+
+
+
+.posts{
+    display: grid;
+    gap: 10px; 
+    width: 79%;
+    margin-top: 150px;
+    margin-left: 15%;
+
+    
+    }
+
+.post{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.post h3{
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    background-color: rgb(82, 79, 79);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+
+}
+.post p{
+    font-size: 1.2em;
+    width: 100%;
+    height: 25vh;
+    margin: 5px;
+    padding: 10px;
+
+
+}
+
+.post div{
+    display: flex;
+    justify-content: space-between;
+}
+.post div .vm{
+    width: 50%;
+    margin-left: 2%;
+    background-color: rgb(15, 105, 15);
+    border: none;
+    color: white;
+    padding: 0px 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.post div a, .post div a button{
+    border:none;
+    padding: 4px 20px;
+    background: red;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
